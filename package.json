@@ -1,22 +1,33 @@
 {
   "name": "movie-finder-data",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test --exit"
+    "test": "mocha test --exit",
+    "start": "node server/index",
+    "dev": "nodemon server/index"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "apicache": "^1.6.3",
     "axios": "^0.16.2",
-    "morgan": "^1.8.2"
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express-rate-limit": "^7.1.5",
+    "morgan": "^1.10.0",
+    "needle": "^3.3.1"
   },
   "devDependencies": {
     "axios-mock-adapter": "^1.9.0",
     "chai": "^4.0.2",
     "chai-http": "^3.0.0",
-    "express": "^4.15.3",
-    "mocha": "^3.5.0"
-  }
+    "express": "^4.18.2",
+    "mocha": "^3.5.0",
+    "nodemon": "^3.0.3"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "description": ""
 }
